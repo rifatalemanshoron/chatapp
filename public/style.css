@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #778AA7;
+}
+.userName{
+    background-color: #0A171F;
+    border:1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+#userNameInput{
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    outline: none ;
+    margin: 0px 12px;
+    max-width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #8781bd8b;
+}
+#userNameSubmit{
+    margin-top: 10px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 40px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0071D9;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;  
+}
+#userNameSubmit:hover{
+    background: rgba(0, 76, 254, 0.759);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 20px 0px;
+}
+
+.main{
+    background-color: #0A171F;
+    border:1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 365px; 
+}
+
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #7e7e7e;
+}
+.name > span {
+    color: #bbb;
+}
+
+.name-input{
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    flex-grow: 1;
+    border: none;
+    outline: none ;
+    margin: 0px 12px;
+    max-width: 250px;
+    border-radius: 10px;
+    background-color: #202D35;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.message-left, .message-right {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.message-left{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #3E4649;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #f6f6f6;
+}
+.message-right{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #0071D9;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #f6f6f6;
+}
+.message-left > p > span, .message-right > p > span{
+     display: block;
+     font-style: italic;
+     font-size: 12px;
+     margin-top: 4px;
+}
+
+.feedback{
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.message-form{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+
+}
+.message-input{
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    border-radius: 5px;
+    color: white;
+    background-color:#202D35;
+}
+
+.send-button{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 20px;
+    height: 48px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0071D9;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+}
+.send-button:hover{
+    background: rgba(0, 76, 254, 0.759);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+.v-divider{
+    height: 48px;
+    width: 2px;
+    background-color: #f6f6f6;
+}
+.clients-total{
+    margin: 20px 0px;
+    color: #7e7e7e;
+    text-align: center;
+}
+
+
+/* -----------ScrollBar design----------- */
+
+
+.message-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #202D35;
+}
+
+.message-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #0A171F;
+}
+
+.message-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #8781bd8b;
+}
